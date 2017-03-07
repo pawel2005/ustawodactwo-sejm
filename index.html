@@ -1,0 +1,93 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+<title>Zgłoś Ustawę do Sejmu</title>
+<link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="top">
+	<div id="BODY">
+		<div id="LOGO"><!--LOGO-->Zgłoś Ustawę do Sejmu<!--/LOGO--></div>
+		<div id="LINKI">
+		<!--LINKI-->
+			<ul>
+			<li><a href="?">Link</a></li>
+			<li><a href="?">Link</a></li>
+			<li><a href="?">Link</a></li>
+			<li><a href="?">Link</a></li>
+			<li><a href="?">Link</a></li>
+			</ul>
+		<!--/LINKI-->
+		</div>
+		<div id="MENU">
+			<!--MENU-->
+			<div class="MENU">
+				<div class="NAGLOWEK" id="MENU_NAGLOWEK"><!--NAGLOWEK MENU-->Menu<!--/NAGLOWEK MENU--></div>
+				<div class="ZAWARTOSC">
+				<!--ZAWARTOSC MENU-->
+					<ul>
+					<li><a href="?">Link</a></li>
+					<li><a href="?">Link</a></li>
+					<li><a href="?">Link</a></li>
+					<li><a href="?">Link</a></li>
+					<li><a href="?">Link</a></li>
+					<li><a href="?">Link</a></li>
+					<li><a href="?">Link</a></li>
+					<li><a href="?">Link</a></li>
+					<li><a href="?">Link</a></li>
+					<li><a href="?">Link</a></li>
+					</ul>
+				<!--/ZAWARTOSC MENU-->
+				</div>
+			</div>
+			<!--/MENU-->
+		</div>
+		<div id="TRESC">
+		<div class="ZAWARTOSC">
+		<!--TRESC-->
+
+<h1>Instrukcja</h1>
+<p>To jest przykładowa treść strony... Aby ją zmienić, wczytaj ten plik (<kbd>index.html</kbd>) w edytorze (X)HTML, odszukaj w kodzie źródłowym strony wyrażenia:<br /><br />
+<code>&lt;!--TRESC--&gt;</code><br /><br />
+oraz<br /><br />
+<code>&lt;!--/TRESC--&gt;</code><br /><br />
+i umieść pomiędzy nimi własny tekst.</p>
+<p>Pomiędzy <code>&lt;!--LOGO--&gt;</code> a <code>&lt;!--/LOGO--&gt;</code> można wpisać tekst, który pojawi się na szczycie strony. Można tam wstawić obrazek logo:<br /><br />
+<code>&lt;img src="logo.jpg" alt="Zgłoś Ustawę do Sejmu"&nbsp;/&gt;</code></p>
+<p>Pomiędzy <code>&lt;!--LINKI--&gt;</code> a <code>&lt;!--/LINKI--&gt;</code> można wstawić powtórzoną nawigację, czyli najważniejsze linki w serwisie, do których powinien być ułatwiony dostęp. Do wpisywania linków użyj znaczników wykazu:<br /><br />
+<code>&lt;ul&gt;<br />
+&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
+&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
+&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
+&lt;/ul&gt;</code><br /><br />
+Oczywiście można tutaj równie dobrze wpisać zwykły tekst.</p>
+<p>Aby dodać dodatkowy blok menu, odszukaj w kodzie źródłowym fragment zawarty pomiędzy:<br /><br />
+<code>&lt;!--MENU--&gt;</code><br /><br />
+a<br /><br />
+<code>&lt;!--/MENU--&gt;</code><br /><br />
+i skopiuj go bezpośrednio poniżej.</p>
+<p>Możesz zmienić nagłówek menu, wpisjąc własny tekst pomiędzy <code>&lt;!--NAGLOWEK MENU--&gt;</code> a <code>&lt;!--/NAGLOWEK MENU--&gt;</code>.</p>
+<p>Możesz zmienić zawartosc bloku menu, wpisjąc własny tekst pomiędzy <code>&lt;!--ZAWARTOSC MENU--&gt;</code> a <code>&lt;!--/ZAWARTOSC MENU--&gt;</code>. Do wpisywania linków użyj znaczników wykazu:<br /><br />
+<code>&lt;ul&gt;<br />
+&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
+&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
+&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
+&lt;/ul&gt;</code></p>
+<h2>Tworzenie podstron</h2>
+<p>Zasadniczo, aby utworzyć nową podstronę serwisu, trzeba skopiować cały ten dokument (<kbd>index.html</kbd>), zmienić w nim treść (zobacz początek tego opisu) i zapisać pod inną nazwą w pliku z rozszerzeniem <kbd>*.html</kbd> - np. <kbd><em>podstrona</em>.html</kbd>. Proces ten można uprościć budując szablon w języku skryptowym <acronym title="PHP Hypertext Preprocessor">PHP</acronym>. Jeśli nie znasz lub nie masz dostępu do tego rodzaju skryptów, możesz w miejsce treści w pliku <kbd>index.html</kbd> wstawić ramkę pływającą:<br /><br />
+<code>&lt;iframe name="p" src="<b>start.html</b>" width="100%" height="400" frameborder="0"&gt;&lt;/iframe&gt;</code><br /><br />
+(<b>start.html</b> to nazwa strony głównej z treścią - to nie jest <kbd>index.html</kbd>!), a do wszystkich linków z menu dodać atrybut:<br /><br />
+&lt;a <b>target="p"</b> href="strona.html"&gt;...&lt;/a&gt;<br /><br />
+Można również skorzystać ze skryptu opublikowanego w serwisie <a href="http://www.kurshtml.edu.pl">Kurs&nbsp;HTML</a> w rozdziale <cite>Skrypty/AutoIFRAME</cite>, który automatycznie dopasuje wysokość ramki pływającej do jej zawartości.</p><h2>Prawa autorskie</h2>
+<p>Możesz wykorzystać ten szablon to budowy dowolnej strony WWW - również komercyjnej. Oczywiście możesz się także podpisać, jako autor treści na niej zawartych.</p><p>Będzie mi bardzo miło, jeżeli wstawisz na swojej stronie banner, button lub chociaż link do serwisu <a href="http://www.kurshtml.edu.pl">Kurs HTML</a> (bannery i buttony znajdziesz w serwisie), ale nie jest to wymagane.</p>
+
+		<!--/TRESC-->
+		</div>
+		</div>
+		<div id="STOPKA"><!--STOPKA-->&copy; Zgłoś Ustawę do Sejmu<!--/STOPKA--></div>
+	</div>
+</div>
+</body>
